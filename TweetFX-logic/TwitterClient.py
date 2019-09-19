@@ -3,15 +3,12 @@
 @author: dvo
 @class: TwitterClient
 """
-
 import re
 import tweepy
 from tweepy import OAuthHandler
 import matplotlib.pyplot as plt
-
 import pandas as pd
 import datetime
-
 
 class TwitterClient(object):
     """

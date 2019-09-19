@@ -1,0 +1,30 @@
+<div class="container h-100">
+    <div class="row align-items-center h-75">
+        <div class="col-6 mx-auto">
+            <div>
+                <label>Register New User</label>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="inputUsername" class="form-control" name="username" placeholder="Username"
+                    required minlength="3" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" autofocus
+                    #username="ngModel">
+            </div>
+            <div>
+                <label>Email Address</label>
+                <input type="text" id="inputUsername" class="form-control" name="email" placeholder="Email" required
+                    minlength="3" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" autofocus
+                    #username="ngModel">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="text" id="inputUsername" class="form-control" name="password" placeholder="Password" required
+                    minlength="3" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" autofocus
+                    #username="ngModel">
+            </div>
+            <div>
+                <button (click)="register" [disabled]="username.invalid || password.invalid || email.invalid">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
